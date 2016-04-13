@@ -2,8 +2,8 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $name = mysqli_real_escape_string($_POST["username"]);
-    $email = mysqli_real_escape_string($_POST["email"]);
+    $name = mysqli_real_escape_string($db,$_POST["username"]);
+    $email = mysqli_real_escape_string($db,$_POST["email"]);
     $password = md5(mysqli_real_escape_string($_POST["password"]));
 
 
