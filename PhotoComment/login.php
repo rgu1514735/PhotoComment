@@ -11,8 +11,8 @@
 		}else
 		{
 			// Define $username and $password
-			$username= mysqli_real_escape_string($_POST['username']);
-			$password= mysqli_real_escape_string($_POST['password']);
+			$username= $_POST['username'];
+			$password=$_POST['password'];
 
 
 			
