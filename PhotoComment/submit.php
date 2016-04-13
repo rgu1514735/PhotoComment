@@ -2,9 +2,9 @@
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    $name = mysqli_real_escape_string($_POST["username"]);
-    $email = mysqli_real_escape_string($_POST["email"]);
-    $password = mysqli_real_escape_string($_POST["password"]);
+    $name = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
 
 
